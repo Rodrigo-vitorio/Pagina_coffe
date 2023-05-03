@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(225, 225, 225, .3);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+
+}
+
+body {
+    background: var(--bg);
+}
+
+.header {
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--border);
+    padding: 1.5rem 7%;
+    position: fixed;
+    top:0px;left: 0px;right: 0px;
+    z-index: 1000;
+}
+.header .logo img{
+    height: 10  rem;
+    user-select: none;
+}
+.header .navbar a{
+margin: 0 1rem;
+font-size: 1.6rem;
+color:#fff;
+}
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom:var(--border);
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+}
+.header .icons div:hover{
+    color: var(--main-color);
+}
+
+#bars-btn{
+    display: none;
+}
+/*  Formulário da aba de pesquisa de produtos*/
+.header .search-form{
+    position: absolute;
+    top: 115%;right: 7%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.header .search-form input{
+    width: 100%;
+    height: 100%;
+    font-size:1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+.header .search-form label:hover{
+color: var(--main-color);
+
+}
+
+/* itens do catalogo */
+.header .cart-items-container{
+    position: absolute;
+    top: 103%;right: 0%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0 1.5rem;
+}
+.header .cart-items-container .cart-item{
+position:relative;
+margin: 2rem 0;
+display: flex;
+align-items: center;
+gap: 1.5rem;
+}
+.header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top: 1rem; right: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--black);
+}
+.header .cart-items-container .cart-item .fa-times:hover{
+    color: var(--main-color);
+}
+
+.header .cart-items-container .cart-item img{
+    height: 7rem;
+}
+.header .cart-items-container .cart-item h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+
+.header .cart-items-container .cart-item .price{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
