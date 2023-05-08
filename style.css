@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 :root {
     --main-color: #d3ad7f;
     --black: #13131a;
@@ -42,6 +42,24 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background: var(--bg);
+}
+section{
+    padding: 2rem 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(--black);
+    padding: 1.2rem 4rem;
+    color: #d3ad7f;
 }
 
 .header {
@@ -171,7 +189,33 @@ gap: 1.5rem;
     color: var(--main-color);
     cursor: pointer;
 }
+/* iniciando o home página foco */
+.home{
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
 
+    background: url(imagens/home-img.jpeg);
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+}
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    color: white;
+    text-transform: uppercase;
+}
+.home .content p {
+    font-size: 3rem;
+    padding: .7rem;
+    color: rgba(255, 255, 255, 0.644);
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 300;
+}
 
 
 
@@ -199,6 +243,21 @@ gap: 1.5rem;
     }
     .header{
         padding: 1.5rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .home{
+        text-align: center;
+        justify-content: center;
+        background-position: left;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+
+    }
+    .home .content p{
+        font-size: 2.5rem;
     }
 
 }
