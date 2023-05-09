@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap');
+
 :root {
     --main-color: #d3ad7f;
     --black: #13131a;
@@ -43,11 +45,12 @@ html::-webkit-scrollbar-thumb {
 body {
     background: var(--bg);
 }
-section{
+
+section {
     padding: 2rem 7%;
 }
 
-.btn{
+.btn {
     margin-top: 1rem;
     display: inline-block;
     padding: .9rem 3rem;
@@ -56,7 +59,8 @@ section{
     background: var(--main-color);
     cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
     background: var(--black);
     padding: 1.2rem 4rem;
     color: #d3ad7f;
@@ -70,42 +74,49 @@ section{
     border-bottom: var(--border);
     padding: 1.5rem 7%;
     position: fixed;
-    top:0px;left: 0px;right: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     z-index: 1000;
 }
-.header .logo img{
-    height: 10  rem;
+
+.header .logo img {
+    height: 10 rem;
     user-select: none;
 }
-.header .navbar a{
-margin: 0 1rem;
-font-size: 1.6rem;
-color:#fff;
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
 }
-.header .navbar a:hover{
+
+.header .navbar a:hover {
     color: var(--main-color);
-    border-bottom:var(--border);
+    border-bottom: var(--border);
     padding-bottom: .5rem;
 }
 
-.header .icons div{
+.header .icons div {
     color: #fff;
     cursor: pointer;
     margin-left: 2rem;
     font-size: 2.5rem;
 }
-.header .icons div:hover{
+
+.header .icons div:hover {
     color: var(--main-color);
 }
 
-#bars-btn{
+#bars-btn {
     display: none;
 }
 
 /*  Formulário da aba de pesquisa de produtos*/
-.header .search-form{
+.header .search-form {
     position: absolute;
-    top: 115%;right: 7%;
+    top: 115%;
+    right: 7%;
     display: flex;
     align-items: center;
     background: #fff;
@@ -114,69 +125,78 @@ color:#fff;
     transform: scaleY(0);
     transform-origin: top;
 }
-.header .search-form input{
+
+.header .search-form input {
     width: 100%;
     height: 100%;
-    font-size:1.6rem;
+    font-size: 1.6rem;
     color: var(--black);
     padding: 1rem;
     text-transform: none;
 }
-.header .search-form label{
+
+.header .search-form label {
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
     color: var(--black);
 }
-.header .search-form label:hover{
-color: var(--main-color);
+
+.header .search-form label:hover {
+    color: var(--main-color);
 
 }
 
 /* itens do catalogo */
-.header .cart-items-container{
+.header .cart-items-container {
     position: absolute;
-    top: 100%;right: -100%;
+    top: 100%;
+    right: -100%;
     height: calc(100vh - 9.5rem);
     width: 35rem;
     background: #fff;
     padding: 0 1.5rem;
 }
-.header .cart-items-container .cart-item{
-position:relative;
-margin: 2rem 0;
-display: flex;
-align-items: center;
-gap: 1.5rem;
+
+.header .cart-items-container .cart-item {
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
-.header .cart-items-container .cart-item .fa-times{
+
+.header .cart-items-container .cart-item .fa-times {
     position: absolute;
-    top: 1rem; right: 1rem;
+    top: 1rem;
+    right: 1rem;
     cursor: pointer;
     font-size: 2rem;
     color: var(--black);
 }
-.header .cart-items-container .cart-item .fa-times:hover{
+
+.header .cart-items-container .cart-item .fa-times:hover {
     color: var(--main-color);
 }
 
-.header .cart-items-container .cart-item img{
+.header .cart-items-container .cart-item img {
     height: 7rem;
 }
-.header .cart-items-container .cart-item h3{
+
+.header .cart-items-container .cart-item h3 {
     font-size: 2rem;
     color: var(--black);
     padding-bottom: .5rem;
 }
 
 
-.header .cart-items-container .cart-item .price{
+.header .cart-items-container .cart-item .price {
     font-size: 1.5rem;
     color: var(--main-color);
     padding-bottom: .5rem;
 }
 
-.btn-get-out{
+.btn-get-out {
     margin-top: 1rem;
     padding: .9rem 3rem;
     background: var(--main-color);
@@ -184,13 +204,15 @@ gap: 1.5rem;
     width: 100%;
     color: var(--black);
 }
-.btn-get-out:hover{
+
+.btn-get-out:hover {
     background: var(--black);
     color: var(--main-color);
     cursor: pointer;
 }
+
 /* iniciando o home página foco */
-.home{
+.Home {
     min-height: 100vh;
     align-items: center;
     display: flex;
@@ -200,23 +222,83 @@ gap: 1.5rem;
     background-repeat: none;
     background-size: cover;
 }
-.home .content{
+
+.Home .content {
     max-width: 60rem;
 }
-.home .content h3{
+
+.Home .content h3 {
     font-size: 6rem;
     color: white;
     text-transform: uppercase;
 }
-.home .content p {
-    font-size: 3rem;
+
+.Home .content p {
+    font-size: 2.5rem;
     padding: .7rem;
     color: rgba(255, 255, 255, 0.644);
-    text-transform: uppercase;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
+    text-transform: none;
 }
 
+/* secão da página sobre start */
+
+.sobre .heading {
+    color: white;
+    font-size: 6rem;
+    gap: 1.2rem;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre .heading span {
+    color: var(--main-color);
+}
+
+.row {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+
+    background: var(--black);
+
+}
+
+.row .conteudo {
+    padding: 1.6rem;
+    color: white;
+
+}
+
+.row .conteudo h3 {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+}
+
+.row .conteudo p {
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 4rem;
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* secão da página sobre end */
 
 
 
@@ -236,47 +318,56 @@ gap: 1.5rem;
 
 
 /* media query */
-@media (max-width:991px){
+@media (max-width:991px) {
     html {
         font-size: 55%;
-        
+
     }
-    .header{
+
+    .header {
         padding: 1.5rem;
     }
-    section{
+
+    section {
         padding: 2rem;
     }
-    .home{
+
+    .home {
         text-align: center;
         justify-content: center;
         background-position: left;
     }
-    .home .content h3{
+
+    .home .content h3 {
         font-size: 4.5rem;
 
     }
-    .home .content p{
+
+    .home .content p {
         font-size: 2.5rem;
     }
 
 }
 
-@media (max-width:768px){
-    #bars-btn{
+@media (max-width:768px) {
+    #bars-btn {
         display: inline-block;
     }
-    .header .navbar{
+
+    .header .navbar {
         position: absolute;
-        top: 100%; right: -100% ;
+        top: 100%;
+        right: -100%;
         background: #fff;
         width: 30rem;
         height: calc(100vh - 0.5rem);
     }
-    .header .navbar.active{
+
+    .header .navbar.active {
         right: 0px;
     }
-    .header .navbar a{
+
+    .header .navbar a {
         color: var(--bg);
         display: block;
         margin: 1.5rem;
@@ -285,20 +376,24 @@ gap: 1.5rem;
         text-align: center;
 
     }
-    .header .cart-items-container.active{
+
+    .header .cart-items-container.active {
         right: 0;
 
     }
-    .header .search-form.active{
+
+    .header .search-form.active {
         transform: scaleY(1);
     }
-    .header .search-form{
+
+    .header .search-form {
         width: 90%;
         right: 2rem;
     }
 }
-@media (max-width:450px){
+
+@media (max-width:450px) {
     html {
         font-size: 45%;
-}
+    }
 }
