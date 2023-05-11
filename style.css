@@ -60,11 +60,11 @@ section {
 }
 
 .btn:hover {
-    background: #6F4E37;
+    background: #556b2f;
     padding-left: 25px;
     padding-right: 25px;
     color: #d3ad7f;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .header {
@@ -245,15 +245,15 @@ section {
 
 /* secão da página sobre start */
 
-.sobre .heading {
-    color: white;
+.heading {
+    color: #556b2f;
     font-size: 6rem;
     gap: 1.2rem;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.sobre .heading span {
+.heading span {
     color: var(--main-color);
 }
 
@@ -319,44 +319,113 @@ section {
     color: #fff;
     font-size: 2rem;
     font-weight: 300;
-    padding:1rem 0;
+    padding: 1rem 0;
 
 }
 
-.Menu .container-box .box .price{
+.Menu .container-box .box .price {
     color: #fff;
     font-size: 2.5rem;
-    padding: .5rem 0 ;
+    padding: .5rem 0;
 }
 
-.Menu .container-box .box .price span{
+.Menu .container-box .box .price span {
     text-decoration: line-through;
-    padding: .5rem 0 ;
+    padding: .5rem 0;
     font-size: 1.8rem;
 }
 
-.Menu .container-box .box:hover{
+.Menu .container-box .box:hover {
     background: #fff;
 }
 
-.Menu .container-box .box:hover > *{
+.Menu .container-box .box:hover>* {
     color: var(--black);
+}
+
+/* seção da página "Menu" end */
+/* ------------------------------------------------------------------------ */
+/* seção da página "Produtos" start */
+.Produtos .container-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Produtos .container-box .box {
+    padding: 2rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.Produtos .container-box .box .icons a {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    color: #fff;
+    margin: .3rem;
+}
+.Produtos .container-box .box .icons a:hover{
+    background: #fff;
+    color: #556b2f;
+}
+.Produtos .container-box .image{
+    padding: 2.5rem 0;
+}
+.Produtos .container-box .image img{
+    height:30rem;
+}
+.Produtos .container-box .conteudo h3{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.Produtos .container-box .conteudo .stars{
+    padding: 1.5rem;
+}
+.Produtos .container-box .conteudo .stars i{
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+.Produtos .container-box .price{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.Produtos .container-box .price span{
+    text-decoration: line-through;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
+/* seção da página "Produtos" end */
+/* ------------------------------------------------------------------------ */
+/* seção da página "Review" start */
+.Review .container-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.Review .container-box .box {
+    padding: 2rem;
+    text-align: center;
+    border: var(--border);
+}
+.Review .container-box .box p{
+    color: #fff;
+}
+.Review .container-box .image{
+padding: 1.5rem;
+}
+.Review .container-box .image img{
+    border-radius: 50%;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* seção da página "Menu" end */
+/* seção da página "Review" end */
 
 
 
