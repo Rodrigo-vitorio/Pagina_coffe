@@ -197,6 +197,20 @@ section {
     padding-bottom: .5rem;
 }
 
+.header .cart-items-container.active {
+    right: 0;
+
+}
+
+.header .search-form.active {
+    transform: scaleY(1);
+}
+
+.header .search-form {
+    width: 20%;
+    right: 2rem;
+}
+
 .btn-get-out {
     margin-top: 1rem;
     padding: .9rem 3rem;
@@ -367,32 +381,40 @@ section {
     color: #fff;
     margin: .3rem;
 }
-.Produtos .container-box .box .icons a:hover{
+
+.Produtos .container-box .box .icons a:hover {
     background: #fff;
     color: #556b2f;
 }
-.Produtos .container-box .image{
+
+.Produtos .container-box .image {
     padding: 2.5rem 0;
 }
-.Produtos .container-box .image img{
-    height:30rem;
+
+.Produtos .container-box .image img {
+    height: 30rem;
 }
-.Produtos .container-box .conteudo h3{
+
+.Produtos .container-box .conteudo h3 {
     font-size: 2.5rem;
     color: #fff;
 }
-.Produtos .container-box .conteudo .stars{
+
+.Produtos .container-box .conteudo .stars {
     padding: 1.5rem;
 }
-.Produtos .container-box .conteudo .stars i{
+
+.Produtos .container-box .conteudo .stars i {
     font-size: 1.7rem;
     color: var(--main-color);
 }
-.Produtos .container-box .price{
+
+.Produtos .container-box .price {
     font-size: 2.5rem;
     color: #fff;
 }
-.Produtos .container-box .price span{
+
+.Produtos .container-box .price span {
     text-decoration: line-through;
     font-size: 2rem;
     font-weight: lighter;
@@ -407,26 +429,149 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
+
 .Review .container-box .box {
     padding: 2rem;
     text-align: center;
     border: var(--border);
 }
-.Review .container-box .box p{
+
+.Review .container-box .box p {
     color: #fff;
 }
-.Review .container-box .image{
-padding: 1.5rem;
+
+.Review .container-box .image {
+    padding: 1.5rem;
 }
-.Review .container-box .image img{
+
+.Review .container-box .image img {
     border-radius: 50%;
+    width: 30%;
+    text-align: baseline;
+
 }
 
+.Review .container-box p {
+    font-size: 1.8rem;
+    margin-top: 5rem;
 
+}
 
+.Review .container-box h2 {
+    font-size: 2rem;
+    color: #fff;
+}
 
 /* seção da página "Review" end */
+/* ------------------------------------------------------------------------ */
+/* seção da página "Contatos" start */
 
+.contatos .container-box {
+    display: flex;
+
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.contatos .container-box .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contatos .container-box h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contatos .container-box form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+
+}
+
+.contatos .container-box form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--black);
+    border: var(--border);
+}
+
+.contatos .container-box form .inputBox i {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 1.6rem;
+}
+
+.contatos .container-box form .inputBox input {
+    width: 100%;
+    background: none;
+    padding: 1.7rem;
+    color: #fff;
+}
+
+.blog .container-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    color: white;
+    
+
+}
+
+.blog .container-box .box {
+    border: var(--border);
+    position: relative;
+}
+
+.blog .container-box .box img {
+    width: 100%;
+}
+
+.blog .container-box .box h2 {
+    font-size: 3rem;
+    padding-top: 1.5rem;
+}
+
+.blog .container-box .box h3 {
+    color: var(--main-color);
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.7rem;
+}
+
+.blog .container-box .box p {
+    font-size: 1.2rem;
+    padding-bottom: 5rem;
+
+}
+
+.blog .container-box .box p,
+h2,
+h3 {
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+.blog .container-box .box .btn{
+    position: absolute;
+    top:90%;
+    left:25%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+/* seção da página "Contatos" end */
 
 
 
