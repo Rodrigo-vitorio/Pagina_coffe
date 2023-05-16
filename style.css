@@ -286,6 +286,7 @@ section {
 
 .sobre .row .image img {
     width: 100%;
+    height: 100%;
 }
 
 .sobre .row .conteudo {
@@ -296,14 +297,14 @@ section {
 }
 
 .sobre .row .conteudo h3 {
-    font-size: 4rem;
-    padding-bottom: 3rem;
+    font-size: 3rem;
+    padding-bottom: 1rem;
 }
 
 .sobre .row .conteudo p {
     font-size: 2rem;
     font-weight: 200;
-    line-height: 3.5rem;
+    line-height: 3rem;
     font-family: 'Raleway', sans-serif;
     text-transform: none;
 
@@ -522,7 +523,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
     color: white;
-    
+
 
 }
 
@@ -561,17 +562,79 @@ h3 {
     padding-right: 2rem;
 
 }
-.blog .container-box .box .btn{
+
+.blog .container-box .box .btn {
     position: absolute;
-    top:90%;
-    left:25%;
+    top: 90%;
+    left: 25%;
     transform: translate(-50%, -50%);
 
 }
 
-
-
 /* seção da página "Contatos" end */
+
+
+footer {
+    background: var(--black);
+    text-align: center;
+}
+
+footer .share {
+    padding: 1rem 0;
+}
+
+footer .share a {
+    color: #fff;
+    border: var(--border);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    margin: .3rem;
+
+}
+
+footer .share a:hover {
+    background-color: var(--main-color);
+
+}
+
+footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: .5em;
+
+}
+
+footer .links a {
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    padding: .7rem 2rem;
+
+}
+
+footer .links a:hover {
+    background-color: var(--main-color);
+}
+
+footer .credit {
+    padding-bottom: 2rem;
+}
+
+footer .credit h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: 0rem;
+
+}
+footer .credit span{
+    color: var(--main-color);
+}
 
 
 
